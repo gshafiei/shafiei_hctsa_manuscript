@@ -211,7 +211,7 @@ for i in range(X.shape[1]):
 
 # spin tests
 centroids, hemiid = spin_conte69.get_gifti_centroids(surfaces, lhlabels,
-                                                     lhlabels)
+                                                     rhlabels)
 spins, cost = netneurostats.gen_spinsamples(centroids, hemiid,
                                             n_rotate=10000, seed=272)
 
@@ -337,7 +337,7 @@ for i in range(X.shape[1]):
 
 # calculate p-values from spin tests
 centroids, hemiid = spin_conte69.get_gifti_centroids(surfaces, lhlabels,
-                                                     lhlabels)
+                                                     rhlabels)
 spins, cost = netneurostats.gen_spinsamples(centroids, hemiid,
                                             n_rotate=10000, seed=272)
 
